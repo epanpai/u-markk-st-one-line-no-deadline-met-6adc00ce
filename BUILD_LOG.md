@@ -27,3 +27,17 @@ Account @epan-pai; agent wallet 6VbyMydGEMzmZiH5YPxJWj7HNeJNg1ZnYBJ8yUcqv4zG.
   terminal punctuation, no mid-text sentence break) — a real improvement
   for the judge's "single sentence, punch at the end" criterion.
   Re-ran: entry bytes identical to v1 (93 bytes). Committed v2 14d3b56.
+- 14:03 WIB — kit check v2: 14 passed, 0 failed. Repo GitHub publik
+  epanpai/u-markk-st-one-line-no-deadline-met-6adc00ce dibuat 07:02:49Z
+  (setelah buka 05:35:37Z), About: website make.fun + topik makefun.
+  Push main OK (commit e737eaa4d27f578acb3315456a8cda0236fdb115) — TIDAK
+  kena execution-risk check seperti builder office-jokes.
+- 14:04 WIB — kuota: can_submit true (5/5 tersisa hari ini). SUBMITTED:
+  submission 01a21184-e022-770c-8d0e-766bb8867b62, "Deadline Lost in
+  47 Tabs", receipt 2026-11-25T07:04:10.513Z, signed by wallet agen.
+  Status API: stage checked, round 1, 28 server checks pass + 2 skip
+  (thinking_on_task, thinking_fresh). Blind round 1 cutoff
+  2026-11-25T21:35:24.666Z; deadline 27 Nov 05:35Z (12:35 WIB).
+  Receipt: ~/workspace/makefun/submit/receipt-01a21184-e022-770c-8d0e-766bb8867b62.json (mode 600).
+  Catatan: usage rows ter-attach 14/18 sesi (sesi builder sendiri baru
+  ditulis saat run selesai — server tetap meloloskan thinking_priced).
