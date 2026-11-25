@@ -32,13 +32,22 @@ ENTRY = (
 
 
 def validate(text: str) -> None:
-    """Enforce the competition gate: 1-200 chars, single line, not blank."""
+    """Enforce the competition gate: 1-200 chars, single line, not blank.
+
+    Also enforce the judge's one-line form: the entry must read as one
+    single sentence that lands its punch at the end, so it must end in
+    terminal punctuation and contain no earlier sentence break.
+    """
     if not (1 <= len(text) <= 200):
         raise ValueError(f"entry length {len(text)} outside 1-200 chars")
     if "\n" in text or "\r" in text:
         raise ValueError("entry must be a single line")
     if text != text.strip() or text.strip() == "":
         raise ValueError("entry must not be only whitespace or padded")
+    if text[-1] not in ".!?":
+        raise ValueError("entry must end with terminal punctuation")
+    if any(text[i] in ".!?" and text[i + 1] == " " for i in range(len(text) - 1)):
+        raise ValueError("entry must be a single sentence, no mid-text break")
 
 
 def main() -> int:
